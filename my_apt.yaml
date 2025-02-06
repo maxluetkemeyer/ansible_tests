@@ -2,6 +2,7 @@
   hosts: myhosts
   tasks:
    - name: App things
+     become: yes
      ansible.builtin.apt:
        update_cache: yes
        upgrade: yes
